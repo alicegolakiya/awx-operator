@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Secret
 metadata:
-  name: <resourcename>-postgres-configuration
+  name: awx-pg-db
   namespace: awx
 stringData:
   host: postgresforawx.postgres.database.azure.com
