@@ -5,11 +5,11 @@ metadata:
   name: awx-pg-db
   namespace: awx
 stringData:
-  host: postgresforawx.postgres.database.azure.com
-  port: 5432
-  database: postgres-db
-  username: pgadmin@postgresforawx
-  password: Ansible#123
-  sslmode: prefer
-  type: managed
+  host: cG9zdGdyZXNmb3Jhd3gucG9zdGdyZXMuZGF0YWJhc2UuYXp1cmUuY29t
+  port: NTQzMg==
+  database: cG9zdGdyZXMtZGI=
+  username: cGdhZG1pbkBwb3N0Z3Jlc2ZvcmF3eA==  
+  password: QW5zaWJsZSMxMjM=
+  sslmode: cHJlZmVy
+  type: bWFuYWdlZA==
 type: Opaque
