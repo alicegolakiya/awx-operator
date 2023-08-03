@@ -11,7 +11,7 @@ spec:
     plural: awxs
     singular: awx
   scope: Namespaced
-  postgres_configuration_secret: awx-pg-db
+#  postgres_configuration_secret: awx-pg-db
   versions:
   - name: v1beta1
     served: true
