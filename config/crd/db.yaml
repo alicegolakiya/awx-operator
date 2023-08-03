@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Secret
 metadata:
-  name: awx-pg-db
+  name: postgres_configuration_secret
   namespace: awx
 stringData:
   host: cG9zdGdyZXNmb3Jhd3gucG9zdGdyZXMuZGF0YWJhc2UuYXp1cmUuY29t
