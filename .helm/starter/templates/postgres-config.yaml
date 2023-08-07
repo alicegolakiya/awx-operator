@@ -1,4 +1,3 @@
-# {{- if and $.Values.AWX.enabled $.Values.AWX.postgres.enabled }}
 apiVersion: v1
 kind: Secret
 metadata:
@@ -13,5 +12,3 @@ stringData:
   sslmode: prefered
   type: unmanaged
 type: Opaque
-# {{- end }}
-# {{- end }}
