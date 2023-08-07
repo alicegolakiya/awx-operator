@@ -1,18 +1,17 @@
-{{- if and $.Values.AWX.enabled $.Values.AWX.postgres.enabled }}
+# {{- if and $.Values.AWX.enabled $.Values.AWX.postgres.enabled }}
 apiVersion: v1
 kind: Secret
 metadata:
-  name: {{ include "postgres.secretName" . }}
-  namespace: {{ $.Release.Namespace }}
-{{- with $.Values.AWX.postgres }}
+  name: awx-postgres-configuration-secret
+  namespace: awx
 stringData:
-  host: {{ .host }}
-  port: {{ .port | quote }}
-  database: {{ .dbName }}
-  username: {{ .username }}
-  password: {{ .password }}
-  sslmode: {{ .sslmode }}
-  type: {{ .type }}
+  host: pgforawx.postgres.database.azure.com
+  port: 5432
+  database: postgres
+  username: pgadmin
+  password: Ansible#123
+  sslmode: prefered
+  type: unmanaged
 type: Opaque
-{{- end }}
-{{- end }}
+# {{- end }}
+# {{- end }}
